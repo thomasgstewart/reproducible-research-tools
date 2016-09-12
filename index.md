@@ -9,5 +9,5 @@ title: Reproducible Research Tools in Data Analysis
 
 ## TOPICS:
 
-<object class="mySlides" data="README.html"></object>
+<object class="mySlides" data="README.html"><a href = "README.html"???</a></object>
 <object class="mySlides" data="page2.html"></object>

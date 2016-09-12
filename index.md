@@ -3,7 +3,6 @@ layout: default
 title: Reproducible Research Tools in Data Analysis
 ---
 
-## TOPICS:
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <object class="mySlides" data="address.html"></object>
 <object class="mySlides" data="README.html"></object>

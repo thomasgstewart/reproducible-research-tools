@@ -51,6 +51,27 @@
         }
         x[slideIndex-1].style.display = "block";
       }
+
+      document.onkeydown = function(e) {
+          switch (e.keyCode) {
+              case 37:
+                  //alert('left');
+                  plusDivs(-1)
+                  break;
+              case 38:
+                  //alert('up');
+                  plusDivs(-1)
+                  break;
+              case 39:
+                  //alert('right');
+                  plusDivs(1)
+                  break;
+              case 40:
+                  //alert('down');
+                  plusDivs(1)
+                  break;
+          }
+      };
     </script>
   </body>
 </html>

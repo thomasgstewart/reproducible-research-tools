@@ -42,8 +42,8 @@
       }
 
       function showDivs(n) {
-        if(n == 1) {bigify_header()};
-        if(n >  1) {smallify_header()};
+        if(n < 2) {bigify_header()};
+        if(n > 1) {smallify_header()};
         var i;
         var x = document.getElementsByClassName("mySlides");
         if (n > x.length) {slideIndex = 1}

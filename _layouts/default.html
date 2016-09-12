@@ -42,7 +42,7 @@
       }
 
       function showDivs(n) {
-        //if(n < 2) {bigify_header()};
+        if(n < 2) {bigify_header()};
         if(n > 1) {smallify_header()};
         var i;
         var x = document.getElementsByClassName("mySlides");
@@ -55,15 +55,12 @@
       }
 
       function smallify_header() {
-        var x = document.getElementsByClassName("title");
-        x[0].style.fontSize = 100%;
-        x[0].style.padding = "0 5px 0 5px";
+        $('#title-box p').css("padding","0 5px 0 5px").css("font-size","100%");
+        };
       }
 
       function bigify_header() {
-        var x = document.getElementsByClassName("title");
-        x[0].style.fontSize = 1.75em;
-        x[0].style.padding = "0 25px 0 25px";
+        $('#title-box p').css("padding","0 25px 0 25px").css("font-size","1.75em");
       }
 
       document.onkeydown = function(e) {

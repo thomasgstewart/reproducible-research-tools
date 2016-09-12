@@ -1,6 +1,8 @@
 object{
   width:800px;
   height:100%;
+  padding: 0;
+  margin: 0;
 }
 
 #top {

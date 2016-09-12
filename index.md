@@ -3,12 +3,9 @@ layout: default
 title: Reproducible Research Tools in Data Analysis
 ---
 
-## ADDRESS OF THESE SLIDES
-
- [thomasgstewart.github.io/reproducible-research-tools](https://thomasgstewart.github.io/reproducible-research-tools)
-
 ## TOPICS:
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<object class="mySlides" data="address.html"></object>
 <object class="mySlides" data="README.html"></object>
 <object class="mySlides" data="page2.html"></object>
 

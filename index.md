@@ -11,3 +11,6 @@ title: Reproducible Research Tools in Data Analysis
 
 <object class="mySlides" data="README.html"><a href = "README.html">???</a></object>
 <object class="mySlides" data="page2.html"></object>
+
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>

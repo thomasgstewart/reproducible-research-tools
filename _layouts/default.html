@@ -19,7 +19,7 @@
         <p><a href="https://medschool.vanderbilt.edu/biostatistics/">DEPARTMENT OF BIOSTATISTICS</a></p>
       </div>
       <div id="title-box">
-        <p>{{ page.title }}</p>
+        <p class="title">{{ page.title }}</p>
       </div>
     </div>
     <div id="content-box">
@@ -38,7 +38,9 @@
       showDivs(slideIndex);
 
       function plusDivs(n) {
-          showDivs(slideIndex += n);
+        if(n == 1) {bigify_header()};
+        if(n >  1) {smallify_header()};
+        showDivs(slideIndex += n);
       }
 
       function showDivs(n) {
@@ -50,6 +52,18 @@
             x[i].style.display = "none";
         }
         x[slideIndex-1].style.display = "block";
+      }
+
+      function smallify_header(){
+        var x = document.getElementsByClassName("title")
+        x[0].style.fontSize = 100%;
+        x[0].style.padding = "0 5px 0 5px";
+      }
+
+      function bigify_header(){
+        var x = document.getElementsByClassName("title")
+        x[0].style.fontSize = 1.75em;
+        x[0].style.padding = "0 25px 0 25px";
       }
 
       document.onkeydown = function(e) {

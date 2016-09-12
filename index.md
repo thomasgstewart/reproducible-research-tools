@@ -1,21 +1,11 @@
 ---
 layout: default
-title: Resources for new STATA users
+title: Reproducible Research Tools in Data Analysis
 ---
 
-## HOW TO ACCESS THESE RESOURCES
+## ADDRESS OF THESE SLIDES
 
-* Hard to remember: use direct address [thomasgstewart.github.io/stata/](https://thomasgstewart.github.io/stata/)
-
-* Easier to remember: Google "Thomas Stewart Vanderbilt". Follow the link in the teaching section of my faculty page.
-
-## CONTRIBUTE
-
-As you learn STATA, feel free to make suggestions of items to add to this resource.
-
-## NOT AN INTRODUCTION TO STATA
-
-There are many, many online resources which introduce you to STATA.  This is NOT another introduction.  Rather, the purpose of this presentation is to introduce several existing resources for learning STATA.
+ [thomasgstewart.github.io/reproducible-research-tools](https://thomasgstewart.github.io/reproducible-research-tools)
 
 ## TOPICS:
 

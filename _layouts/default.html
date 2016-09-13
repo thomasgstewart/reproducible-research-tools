@@ -51,9 +51,27 @@
         if (n < 1) {slideIndex = 1} ;
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
+            x[i].style.height = x[i].contentWindow.document.body.offsetHeight + 'px';
         }
         x[slideIndex-1].style.display = "block";
-        framesizer();
+
+        if ($.support.safari || $.support.opera) {
+
+           x.load(function(){
+               setTimeout(iResize, 0);
+             });
+
+           for (var i = 0, j = x.length; i < j; i++) {
+            var iSource = x[i].src;
+            x[i].src = '';
+            x[i].src = iSource;
+             }
+
+        } else {
+           x.load(function() {
+               this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+           });
+        }
       }
 
       function smallify_header() {

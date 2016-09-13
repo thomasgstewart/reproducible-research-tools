@@ -38,8 +38,7 @@ object{
 }
 
 #bios p{
-  padding: 5px;
-  padding-left: 13px;
+  padding: 5px 13px;
   margin: auto;
   max-width: 800px;
   align: center;
@@ -60,11 +59,7 @@ object{
 #title-box p{
   margin: auto;
   max-width: 800px;
-  padding-left: 0;
-  padding-right:0;
-  padding-top: 125px;
-  padding-bottom: 125px;
-  text-align: center;
+  padding: 125px 0;
   font-size: 2.25em;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   text-transform: uppercase;

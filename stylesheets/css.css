@@ -1,11 +1,5 @@
-html, body{
-   height: 100%;
-   min-height: 100%;
-}
-
-object{
-  width:800px;
-  height:100%;
+iframe{
+  width: 80vw;
 }
 
 #top {

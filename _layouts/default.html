@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" type="text/css" href="stylesheets/sindresorhus-github-markdown-css.css">
 <link rel="stylesheet" type="text/css" href="stylesheets/css.css">
 </head>
@@ -47,7 +46,7 @@
         if(n < 2) {bigify_header()};
         if(n > 1) {smallify_header()};
         var i;
-        var x = document.getElementsByClassName("mySlides");
+        var x = document.getElementsByClassName("iframe");
         if (n > x.length) {slideIndex = x.length}
         if (n < 1) {slideIndex = 1} ;
         for (i = 0; i < x.length; i++) {
@@ -85,6 +84,39 @@
                   break;
           }
       };
+
+      $(function(){
+
+          var iFrames = $('iframe');
+
+        function iResize() {
+
+          for (var i = 0, j = iFrames.length; i < j; i++) {
+            iFrames[i].style.height = iFrames[i].contentWindow.document.body.offsetHeight + 'px';}
+            }
+
+            if ($.support.safari || $.support.opera) {
+
+               iFrames.load(function(){
+                   setTimeout(iResize, 0);
+                 });
+
+               for (var i = 0, j = iFrames.length; i < j; i++) {
+                var iSource = iFrames[i].src;
+                iFrames[i].src = '';
+                iFrames[i].src = iSource;
+                 }
+
+            } else {
+               iFrames.load(function() {
+                   this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
+               });
+            }
+
+          });
+
+
+
     </script>
   </body>
 </html>

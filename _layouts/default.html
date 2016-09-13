@@ -36,7 +36,6 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript">
       var slideIndex = 1;
-      showDivs(slideIndex);
 
       function plusDivs(n) {
         showDivs(slideIndex += n);
@@ -90,6 +89,8 @@
                   break;
           }
       };
+      $( window ).load(function() {showDivs(slideIndex);});
+
 
     </script>
   </body>

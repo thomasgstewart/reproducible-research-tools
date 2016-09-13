@@ -55,24 +55,8 @@
         }
         x[slideIndex-1].style.display = "block";
         x[slideIndex-1].style.height = x[slideIndex-1].contentWindow.document.body.offsetHeight + 'px';
+        setTimeout(iResize, 0);
 
-        if ($.support.safari || $.support.opera) {
-
-           x.load(function(){
-               setTimeout(iResize, 0);
-             });
-
-           for (var i = 0, j = x.length; i < j; i++) {
-            var iSource = x[i].src;
-            x[i].src = '';
-            x[i].src = iSource;
-             }
-
-        } else {
-           x.load(function() {
-               this.style.height = this.contentWindow.document.body.offsetHeight + 'px';
-           });
-        }
       }
 
       function smallify_header() {

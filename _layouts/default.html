@@ -56,7 +56,7 @@
         var y = (x[slideIndex-1].contentWindow || x[slideIndex-1].contentDocument);
         if (y.document) y = y.document;
         x[slideIndex-1].style.display = "block";
-        x[slideIndex-1].height = y.body.offsetHeight + 'px';
+        x[slideIndex-1].height = y.body.scrollHeight + 'px';
 
       }
 
@@ -90,7 +90,7 @@
           }
       };
 
-  
+
 
     </script>
   </body>

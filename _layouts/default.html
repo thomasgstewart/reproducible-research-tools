@@ -51,9 +51,10 @@
         if (n < 1) {slideIndex = 1} ;
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
-            x[i].style.height = x[i].contentWindow.document.body.offsetHeight + 'px';
+
         }
         x[slideIndex-1].style.display = "block";
+        x[slideIndex-1].style.height = x[slideIndex-1].contentWindow.document.body.offsetHeight + 'px';
 
         if ($.support.safari || $.support.opera) {
 

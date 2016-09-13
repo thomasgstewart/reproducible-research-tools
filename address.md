@@ -8,4 +8,4 @@ title: Address
 
 <h2 style="text-align: center;"> 2016-09-16 </h2>
 
-## SLIDES: thomasgstewart.github.io/reproducible-research-tools
+<h2 style="text-align: center;">thomasgstewart.github.io/reproducible-research-tools</h2>

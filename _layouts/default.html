@@ -90,7 +90,13 @@
           }
       };
 
+      fontsize = function () {
+          var fontSize = $("#title-box").width() * 0.10; // 10% of container width
+          $("#title-box p").css('font-size', fontSize);
+      };
 
+      $(window).resize(fontsize);
+      $(document).ready(fontsize);
 
     </script>
   </body>

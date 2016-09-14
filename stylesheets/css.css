@@ -102,8 +102,8 @@ a {
 }
 
 .markdown-body p {
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 1.6em;
+  max-width: 80ex;
 }
 
 .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5 {

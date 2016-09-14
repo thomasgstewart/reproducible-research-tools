@@ -987,7 +987,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748737"
-     inkscape:cx="2253.9767"
+     inkscape:cx="1643.8446"
      inkscape:cy="1356.297"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -1010,7 +1010,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1026,39 +1026,53 @@
        height="2351.1951"
        x="-2449.0195"
        y="-694.24268" />
-    <flowRoot
+    <text
        xml:space="preserve"
-       id="flowRoot32455"
        style="font-style:normal;font-weight:normal;font-size:180.00001526px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(-1773.9721,-673.68303)"><flowRegion
-         id="flowRegion32457"><rect
-           id="rect32459"
-           width="1729.3812"
-           height="242.43661"
-           x="52.527931"
-           y="2330.8555"
-           style="font-size:180.00001526px" /></flowRegion><flowPara
-         id="flowPara32461">REDCAP</flowPara></flowRoot>    <rect
+       x="-1721.4447"
+       y="1836.5873"
+       id="text111451"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-1721.4447"
+         y="1836.5873"
+         id="tspan111453"><tspan
+           x="-1721.4447"
+           y="1836.5873"
+           id="tspan111455">REDCAP</tspan></tspan></text>
+    <rect
        style="opacity:0.29800002;fill:#2e06ff;fill-opacity:0.1254902;stroke:#2e06ff;stroke-width:20.43995285;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
        id="rect32438-6"
        width="2201.6929"
        height="2351.1953"
        x="-200.41983"
        y="-694.24268" />
-    <flowRoot
+    <text
        xml:space="preserve"
-       id="flowRoot32455-0"
        style="font-style:normal;font-weight:normal;font-size:180.00001526px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(846.56228,-689.84514)"><flowRegion
-         id="flowRegion32457-6"><rect
-           id="rect32459-2"
-           width="1418.2542"
-           height="492.95459"
-           x="-654.57892"
-           y="2347.0178"
-           style="font-size:180.00001526px" /></flowRegion><flowPara
-         id="flowPara32461-6">R, PYTHON, </flowPara><flowPara
-         id="flowPara32487">KNITR, JUPYTER</flowPara></flowRoot>    <g
+       x="191.98416"
+       y="1836.5873"
+       id="text111439"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="191.98416"
+         y="1836.5873"
+         id="tspan111441"><tspan
+           x="191.98416"
+           y="1836.5873"
+           id="tspan111443">R, PYTHON, </tspan><tspan
+           dx="0"
+           x="1282.8827"
+           y="1836.5873"
+           id="tspan111445" /></tspan><tspan
+         sodipodi:role="line"
+         x="191.98416"
+         y="2061.5872"
+         id="tspan111447"><tspan
+           x="191.98416"
+           y="2061.5872"
+           id="tspan111449">KNITR, JUPYTER</tspan></tspan></text>
+    <g
        id="g29085"
        transform="translate(-29.038309,-16.162442)">
       <g

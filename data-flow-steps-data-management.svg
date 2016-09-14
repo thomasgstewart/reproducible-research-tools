@@ -987,7 +987,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748737"
-     inkscape:cx="2253.9767"
+     inkscape:cx="1643.8446"
      inkscape:cy="1356.297"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -1010,7 +1010,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -2139,19 +2139,21 @@
         </g>
       </g>
     </g>
-    <flowRoot
+    <text
        xml:space="preserve"
-       id="flowRoot19224"
        style="font-style:normal;font-weight:normal;font-size:80.00000763px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(-2249.0982,-615.20581)"><flowRegion
-         id="flowRegion19226"><rect
-           id="rect19228"
-           width="868.7312"
-           height="278.80209"
-           x="-52.527931"
-           y="1850.0229"
-           style="font-size:80.00000763px" /></flowRegion><flowPara
-         id="flowPara19230">DATA COLLECTION</flowPara></flowRoot>    <rect
+       x="-2301.6255"
+       y="1314.5576"
+       id="text88521"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-2301.6255"
+         y="1314.5576"
+         id="tspan88523"><tspan
+           x="-2301.6255"
+           y="1314.5576"
+           id="tspan88525">DATA COLLECTION</tspan></tspan></text>
+    <rect
        style="opacity:0.29800002;fill:#f9ad04;fill-opacity:0.1254902;stroke:#f9ad04;stroke-width:20.00000191;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.6"
        id="rect11100-3"
        width="860.65082"
@@ -2674,19 +2676,21 @@
         </g>
       </g>
     </g>
-    <flowRoot
+    <text
        xml:space="preserve"
-       id="flowRoot19224-5"
        style="font-style:normal;font-weight:normal;font-size:80.00000763px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(-1149.0993,-615.20581)"><flowRegion
-         id="flowRegion19226-3"><rect
-           id="rect19228-5"
-           width="868.7312"
-           height="278.80209"
-           x="-52.527931"
-           y="1850.0229"
-           style="font-size:80.00000763px" /></flowRegion><flowPara
-         id="flowPara19230-6">DATA MANAGEMENT</flowPara></flowRoot>    <g
+       x="-1201.6266"
+       y="1314.5576"
+       id="text88515"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="-1201.6266"
+         y="1314.5576"
+         id="tspan88517"><tspan
+           x="-1201.6266"
+           y="1314.5576"
+           id="tspan88519">DATA MANAGEMENT</tspan></tspan></text>
+    <g
        id="g10396"
        transform="matrix(0.90217415,0,0,0.93705944,177.91764,-17.605269)">
       <g

@@ -14,7 +14,7 @@ title: Reproducible Research Tools in Data Analysis
 <iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-steps-data-management.html">
 </iframe>
 
-<iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-steps-anaylsis.html">
+<iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-steps-analysis.html">
 </iframe>
 
 <iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-steps-manuscript.html">

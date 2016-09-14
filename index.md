@@ -5,6 +5,10 @@ title: Reproducible Research Tools in Data Analysis
 
 <iframe src="address.html" class="iframe" scrolling="no"  frameborder="0"></iframe>
 
+<iframe src="what-is-reproducible-research-01.html" class="iframe" scrolling="no"  frameborder="0"></iframe>
+
+<iframe src="what-is-reproducible-research-02.html" class="iframe" scrolling="no"  frameborder="0"></iframe>
+
 <iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-steps-blank.html">
 </iframe>
 

@@ -26,6 +26,18 @@ title: Reproducible Research Tools in Data Analysis
 <iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-steps-manuscript.html">
 </iframe>
 
+<iframe class="iframe" scrolling="no" frameborder="0" src="reproducible-research-is-difficult-01.html">
+</iframe>
+
+<iframe class="iframe" scrolling="no" frameborder="0" src="reproducible-research-is-difficult-02.html">
+</iframe>
+
+<iframe class="iframe" scrolling="no" frameborder="0" src="reproducible-research-is-essential-01.html">
+</iframe>
+
+<iframe class="iframe" scrolling="no" frameborder="0" src="reproducible-research-is-essential-02.html">
+</iframe>
+
 <iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-tools.html">
 </iframe>
 

@@ -103,6 +103,9 @@ a {
 
 .markdown-body p {
   font-size: 1.6em;
+}
+
+.markdown-body * {
   max-width: 65ex;
 }
 

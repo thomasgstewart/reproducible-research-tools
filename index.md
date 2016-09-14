@@ -5,28 +5,22 @@ title: Reproducible Research Tools in Data Analysis
 
 <iframe src="address.html" class="iframe" scrolling="no"  frameborder="0"></iframe>
 
-<iframe class="iframe" scrolling="no" frameborder="0">
-<img src="data-flow-steps-blank.svg" alt="data flow" width="100%">
+<iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-steps-blank.html">
 </iframe>
 
-<iframe class="iframe" scrolling="no" frameborder="0">
-<img src="data-flow-steps-data-collection.svg" alt="data flow" width="100%">
+<iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-steps-data-collection.html">
 </iframe>
 
-<iframe class="iframe" scrolling="no" frameborder="0">
-<img src="data-flow-steps-data-management.svg" alt="data flow" width="100%">
+<iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-steps-data-management.html">
 </iframe>
 
-<iframe class="iframe" scrolling="no" frameborder="0">
-<img src="data-flow-steps-anaylsis.svg" alt="data flow" width="100%">
+<iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-steps-anaylsis.html">
 </iframe>
 
-<iframe class="iframe" scrolling="no" frameborder="0">
-<img src="data-flow-steps-manuscript.svg" alt="data flow" width="100%">
+<iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-steps-manuscript.html">
 </iframe>
 
-<iframe class="iframe" scrolling="no" frameborder="0">
-<img src="data-flow-tools.svg" alt="data flow" width="100%">
+<iframe class="iframe" scrolling="no" frameborder="0" src="data-flow-tools.html">
 </iframe>
 
 <iframe src="page2.html" class="iframe" scrolling="no" frameborder="0" ></iframe>

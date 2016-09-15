@@ -112,6 +112,7 @@ a {
 
 .markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5 {
     border-bottom: 0;
+    max-width: 65ex;
 }
 
 

@@ -3,7 +3,7 @@ layout: slide
 title: R
 ---
 
-#<a href='https://www.r-project.org/' target="_blank">R (link to website)</a>
+<h1> <a href='https://www.r-project.org/' target="_blank">R (link to website)</a></h1>
 
 * R is a language and environment for statistical computing and graphics
 * R is free

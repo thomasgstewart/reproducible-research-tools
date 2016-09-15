@@ -47,6 +47,18 @@ title: Reproducible Research Tools in Data Analysis
 <iframe class="iframe" scrolling="no" frameborder="0" src="tools-r-03.html">
 </iframe>
 
+<iframe class="iframe" scrolling="no" frameborder="0" src="tools-r-literate-programming-01.md">
+</iframe>
+
+<iframe class="iframe" scrolling="no" frameborder="0" src="tools-r-literate-programming-02.md">
+</iframe>
+
+<iframe class="iframe" scrolling="no" frameborder="0" src="tools-r-literate-programming-03.md">
+</iframe>
+
+<iframe class="iframe" scrolling="no" frameborder="0" src="tools-r-literate-programming-04.md">
+</iframe>
+
 <iframe src="page2.html" class="iframe" scrolling="no" frameborder="0" ></iframe>
 
 <a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>

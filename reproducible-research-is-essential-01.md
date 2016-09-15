@@ -9,4 +9,4 @@ title: REPRODUCIBLE RESEARCH IS ESSENTIAL
 
 # There are tools which make reproducible research practice much easier to implement
 * Redcap (data collection, data management)
-* R (statistical analysis) with knitr or jupyter notebooks (literate literate programming)
+* R (statistical analysis) with knitr or jupyter notebooks (literate programming)

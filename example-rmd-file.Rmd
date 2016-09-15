@@ -1,213 +1,45 @@
 ---
-title: "METHYLATION AND SURVIVAL IN GLIOMA PATIENTS"
-author: "Thomas G. Stewart"
-date: '`r date()`'
+title: "EXAMPLE OF REPRODUCIBLE RESEARCH:<br><br>The effectiveness of RHC in the initial care of critically ill patients"
+author: "Connors AF Jr, Speroff T, Dawson NV, Thomas C, Harrell FE Jr, Wagner D, Desbiens N, Goldman L, Wu AW, Califf RM, Fulkerson WJ Jr, Vidaillet H, Broste S, Bellamy P, Lynn J, Knaus WA"
+output:
+  html_document:
+    code_folding: hide
+    theme: "paper"
+    # toc: true
+    # toc_float:
+    #   collapsed: false
+    #   smooth_scroll: true
 ---
 
-```{r setup, include=FALSE}
-rm(list=ls())
+```{r setup, warning = FALSE, message = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-source("http://data.vanderbilt.edu/tgs/misc/r_functions.txt")
-#devtools::install_github("tklebel/readxl")
 require(Hmisc)
-require(readxl)
-require(reshape)
-require(dplyr)
-require(data.table)
 require(knitr)
-require(rms)
-
-setwd("~/alfresco/Sites/clark-wes/documentLibrary/data")
-data <- read_excel("GBM_LGG_clinical_Test.xlsx", n=1000)
-
-# GIVE GENERIC NAMES TO UNNAMED VARIABLES
-blanks <- names(data) == ""
-names(data)[blanks] <- "unknown" %|% 1:sum(blanks) 
-
-# REMOVE COLUMNS WITH DUPLICATED NAMES
-dup_col_names <- names(data)[duplicated(names(data))]
-for(i in dup_col_names) data[,which(names(data) %in% i)[-1]] <- NULL
-
-# RENAME AND LABEL VARIABLES
-for(i in seq_along(data)){
-  attr(data[[i]],'label') <- names(data[i])
-  attr(data[[i]],'class') <- c('labelled',attr(data[[i]],'class'))
-}
-data <- namify(data)
-
-setnames(data,"idh1_mutation_status_derived_by_station_x", "idh1")
-setnames(data,"mthfd1_mutation_status","mthfd1")
-
-# INCLUSION EXCLUSION
-data <- subset(data,sample_type != "Solid Tissue Normal")
-
-# INCORPORATE NA
-data <- data %>% mutate(mthfd1 = ifelse(mthfd1=="Unknown", NA, mthfd1))
-
+getHdata(rhc)
 ```
 
-*****
+## ABSTRACT
 
-## TABLE 1 - PATIENT CHARACTERISTICS
+To examine the association between the use of right heart catheterization (RHC) during the first 24 hours of care ....
+
+## SUBJECTS
+
+A total of `r nrow(rhc)` critically ill adult patients receiving care in an ICU for 1 of 9 prespecified disease categories.
+
+##RESULTS
+
+By case-matching analysis ...
 
 ```{r}
-tbl1_formula <- (
-   age_at_diagnosis 
- + gender 
- + year_of_diagnosis 
- + cancer_type 
- + tumor_location 
- + idh1
- + mthfd1 
- + tumor_grade 
- + mean_methylation
- + radiation_therapy
- + karnofsky_score
- + overall_survival
- + overall_survival_days
- ~ 1
- )
-
-tbl1 <- summaryM(tbl1_formula, data = data)
-tbl1 <- summaryM_to_df(tbl1, 
-                       exclude1   = FALSE, 
-                       long       = TRUE, 
-                       digits     = 2,
-                       na.include = TRUE)
+tbl1 <- summaryM(
+  sex + age + edu ~ swang1, 
+  data = rhc,
+  overall = TRUE
+)
+tbl1 <- summaryM_to_df(tbl1, exclude1 = FALSE, digits = 2, long = TRUE)
 kable(tbl1)
 ```
 
-\  
-\  
-\  
-
-## COX PROPORTIONAL HAZARDS MODEL
-
-### TABLE OF PREDICTOR EFFECTS
-
-```{r, results="asis"}
-# Tumor grade is only relevant for LGG cancer types.
-# Will create a variable type with GBM, G2LGG, G3LGG
-data <- data %>% mutate(cancer_type_grade = ifelse(cancer_type=="GBM", cancer_type, ifelse(is.na(tumor_grade), tumor_grade, "LGG-" %|% tumor_grade)))
 
 
-model <- (
-    Surv(time = overall_survival_days, event = overall_survival)
-  ~ rcs(age_at_diagnosis, 3)
-  + rcs(year_of_diagnosis, 3)
-  + gender
-  + cancer_type_grade
-# + tumor_location
-  + radiation_therapy
-# + rcs(karnofsky_score, 3)
-  + idh1*rcs(mean_methylation, 4)
-  + idh1
-  + mthfd1
-)
 
-options (warn=-1)
-dd <- datadist(data)
-options (warn=0)
-
-dd$limits$age_at_diagnosis[c(1,3)] <- round(dd$limits$age_at_diagnosis[c(1,3)])
-dd$limits$year_of_diagnosis[c(1,3)] <- round(dd$limits$year_of_diagnosis[c(1,3)])
-dd$limits$mean_methylation[c(1,3)] <- round(dd$limits$mean_methylation[c(1,3)],2)
-options(datadist="dd")
-
-cph1 <- cph(model, 
-            data = data, 
-            surv = TRUE)
-a1 <- anova(cph1)
-a1[,c(1,3)] <- cbind(sprintf("%6.2f",a1[,1]), 
-                     format.pval(a1[,3],digits=3,eps=0.001))
-row.names(a1) <- gsub("^ ","&nbsp;&nbsp;",row.names(a1))
-kable(a1,align = c("r","r","r"))
-
-a2 <- anova(cph1, idh1, mean_methylation)
-```
-
-```{r}
-model2 <- update(model, .~. - idh1 : rcs(mean_methylation,4))
-
-cph2 <- cph(model2, 
-            data = data, 
-            surv = TRUE)
-
-a3 <- anova(cph2)
-```
-
-### PLOT OF LOG HAZARD RATIOS
-
-```{r}
-# PARAMETER PLOT
-mypar2()
-par(mar=c(1,2,2,1))
-plot(summary(cph1, antilog=FALSE))
-```
-
-```{r, results='asis'}
-# EFFECT PLOTS
-g <- Survival(cph1)
-q_survival <- Quantile(cph1)
-med_survival <- function(x){q_survival(lp=x)}
-
-plot_variables <- c("age_at_diagnosis","year_of_diagnosis","mean_methylation")
-plot_colors <- c("#CF5656","#347C7C","#9BC150")
-for(i in plot_variables) {
-  
-  preds2 <- predictions <-do.call(Predict,
-                                  list(x=cph1,i,
-                                       "cancer_type_grade" ,
-                                       fun=med_survival))
-  p2 <- preds2 %>% filter(cancer_type_grade == cancer_tg[j])
-  
-  idx <- !is.na(predictions$lower) & !is.na(predictions$upper)
-  predictions <- predictions[idx, ]
-  at <- attributes(predictions)$info
-  predictions <- predictions %>% mutate(yhat  =  yhat/365.25,
-                                        lower = lower/365.25,
-                                        upper = upper/365.25)
-  
-  cat("<br><br><h3>" %|% toupper(at$Design$label[at$varying] %|% " on median survival time") %|% "</h3>")
-  cancer_tg <- unique(predictions[,"cancer_type_grade"])
-  for(j in seq_along(cancer_tg)){
-    lineplot_ci(x    = i,
-            y    = "yhat",
-            y_lb = "lower",
-            y_ub = "upper",
-            data = predictions %>% filter(cancer_type_grade == cancer_tg[j]),
-            xlim = range(c(predictions[,i], p2[,i]), na.rm = TRUE),
-            add  = j > 1,
-            line_col = plot_colors[j],
-            ci_col = plot_colors[j] %|% "80",
-            panel.first = {mypar2(); par(mar=c(2,3,1,1), oma=c(2,0,2,0)); grid()},
-            las  = 1)
-    
-    lines(p2[,i], p2[,"yhat"], col = plot_colors[j], lwd = 3)
-    pp <- data %>% 
-      filter(cancer_type_grade == cancer_tg[j]) %>% 
-      select_(i, 'overall_survival_days', 'overall_survival') %>% 
-      mutate(overall_survival_days = overall_survival_days/365.25)
-    points(pp[[1]],pp[[2]], col = plot_colors[j], 
-           pch = ifelse(pp[[3]] %in% 1, 16, 1))
-  }
-  
-  legend("topright",legend = cancer_tg, lwd = 3, col = plot_colors)
-
-  title(ylab = "Median Survival (years)", line=2)
-  title(xlab = at$Design$label[at$varying])
-} 
-
-```
-
-
-```{r}
-idx <- data$idh1 == "Yes"
-plot(ecdf(
-  unlist(data[idx,'mean_methylation'])
-  ))
-
-lines(ecdf(
-  unlist(data[!idx,'mean_methylation'])
-  ), col="red")
-```

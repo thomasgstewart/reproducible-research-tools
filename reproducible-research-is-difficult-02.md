@@ -7,4 +7,5 @@ title: REPRODUCIBLE RESEARCH IS DIFFICULT
 * data is often passed from one *format* to another
 * data is often passed from one *team* to another
 
+<br><br>
 <img src="data-flow-danger-zone.svg" alt="data flow" width="100%">

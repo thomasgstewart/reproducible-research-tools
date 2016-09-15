@@ -102,7 +102,7 @@ a {
 }
 
 .markdown-body p, .markdown-body ol, .markdown-body ul {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   max-width: 65ex;
 }
 

@@ -6,6 +6,7 @@ title: Literate Programming
 # Literate programming
 
 Literate programming is a type of work flow in which
+
 1 authoring a statistical analysis (including data management) and
 1 authoring the interpretation of the results
 occurs within a single script so that

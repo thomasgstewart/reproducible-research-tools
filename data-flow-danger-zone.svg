@@ -11,9 +11,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="1261.7399mm"
-   height="790.81067mm"
-   viewBox="0 0 4470.7318 2802.0851"
+   width="1182.0947mm"
+   height="621.5658mm"
+   viewBox="0 0 4188.5246 2202.3985"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -987,8 +987,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.24748737"
-     inkscape:cx="1651.9258"
-     inkscape:cy="1356.297"
+     inkscape:cx="1504.4979"
+     inkscape:cy="774.3649"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1018,7 +1018,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(2459.2393,704.46265)">
+     transform="translate(2311.8114,686.7082)">
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:13.76494408;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m -1437.7777,-423.74167 c 72.731,0 72.731,0 72.731,0"
@@ -9396,69 +9396,69 @@
              id="g4194">
             <polygon
                style="fill:#ffffff"
-               points="241.08,61.887 192.08,196.89 12.698,197.07 90.637,61.849 "
+               points="90.637,61.849 241.08,61.887 192.08,196.89 12.698,197.07 "
                id="polygon4196" />
             <polygon
                style="fill:none;stroke:#000000;stroke-width:0.5"
-               points="241.08,61.887 192.08,196.89 12.698,197.07 90.637,61.849 "
+               points="90.637,61.849 241.08,61.887 192.08,196.89 12.698,197.07 "
                id="polygon4198" />
           </g>
         </g>
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,59.056 192.08,194.06 12.698,194.24 90.637,59.018 "
+           points="90.637,59.018 241.08,59.056 192.08,194.06 12.698,194.24 "
            id="polygon4200" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,56.226 192.08,191.23 12.698,191.41 90.637,56.188 "
+           points="90.637,56.188 241.08,56.226 192.08,191.23 12.698,191.41 "
            id="polygon4202" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,53.395 192.08,188.4 12.698,188.58 90.637,53.357 "
+           points="90.637,53.357 241.08,53.395 192.08,188.4 12.698,188.58 "
            id="polygon4204" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,50.564 192.08,185.57 12.698,185.75 90.637,50.526 "
+           points="90.637,50.526 241.08,50.564 192.08,185.57 12.698,185.75 "
            id="polygon4206" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,47.734 192.08,182.74 12.698,182.92 90.637,47.696 "
+           points="90.637,47.696 241.08,47.734 192.08,182.74 12.698,182.92 "
            id="polygon4208" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,44.903 192.08,179.91 12.698,180.09 90.637,44.865 "
+           points="90.637,44.865 241.08,44.903 192.08,179.91 12.698,180.09 "
            id="polygon4210" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,42.073 192.08,177.08 12.698,177.26 90.637,42.035 "
+           points="90.637,42.035 241.08,42.073 192.08,177.08 12.698,177.26 "
            id="polygon4212" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,39.242 192.08,174.25 12.698,174.43 90.637,39.204 "
+           points="90.637,39.204 241.08,39.242 192.08,174.25 12.698,174.43 "
            id="polygon4214" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,36.412 192.08,171.42 12.698,171.6 90.637,36.374 "
+           points="90.637,36.374 241.08,36.412 192.08,171.42 12.698,171.6 "
            id="polygon4216" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,33.581 192.08,168.59 12.698,168.77 90.637,33.543 "
+           points="90.637,33.543 241.08,33.581 192.08,168.59 12.698,168.77 "
            id="polygon4218" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,30.75 192.08,165.76 12.698,165.94 90.637,30.712 "
+           points="90.637,30.712 241.08,30.75 192.08,165.76 12.698,165.94 "
            id="polygon4220" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,27.92 192.08,162.93 12.698,163.11 90.637,27.882 "
+           points="90.637,27.882 241.08,27.92 192.08,162.93 12.698,163.11 "
            id="polygon4222" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,25.089 192.08,160.1 12.698,160.28 90.637,25.051 "
+           points="90.637,25.051 241.08,25.089 192.08,160.1 12.698,160.28 "
            id="polygon4224" />
         <polygon
            style="fill:#ffffff;stroke:#000000;stroke-width:0.5"
-           points="241.08,22.259 192.08,157.27 12.698,157.45 90.637,22.221 "
+           points="90.637,22.221 241.08,22.259 192.08,157.27 12.698,157.45 "
            id="polygon4226" />
         <g
            id="g4228">
@@ -9466,7 +9466,7 @@
              id="defs4230">
             <polygon
                id="SVGID_1_"
-               points="242.18,62.085 192.89,198.1 11.375,196.21 11.848,155.92 89.573,19.905 241.23,20.854 " />
+               points="11.848,155.92 89.573,19.905 241.23,20.854 242.18,62.085 192.89,198.1 11.375,196.21 " />
           </defs>
           <clipPath
              id="SVGID_2_">

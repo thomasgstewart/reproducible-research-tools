@@ -123,6 +123,6 @@ a {
     padding-bottom: 0.3em;
 }
 
-.fontpage h1 {
-  max-width: 80vw;
+.markdown-body h1 .fontpage {
+  max-width: 80;
 }

@@ -65,6 +65,12 @@ title: Reproducible Research Tools in Data Analysis
 <iframe class="iframe" scrolling="no" frameborder="0" src="tools-r-literate-programming-06.html">
 </iframe>
 
+<iframe class="iframe" scrolling="no" frameborder="0" src="tools-jupyter-01.html">
+</iframe>
+
+<iframe class="iframe" scrolling="no" frameborder="0" src="tools-jupyter-02.html">
+</iframe>
+
 
 
 <iframe src="page2.html" class="iframe" scrolling="no" frameborder="0" ></iframe>

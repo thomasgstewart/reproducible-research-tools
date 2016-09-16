@@ -123,6 +123,6 @@ a {
     padding-bottom: 0.3em;
 }
 
-.frontpage h1, .frontpage h2 {
+.markdown-body .frontpage h1, .markdown-body .frontpage h2 {
   max-width: 80vw;
 }
